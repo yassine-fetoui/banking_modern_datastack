@@ -1,0 +1,35 @@
+[2026-02-11T12:33:06.751+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-11T12:33:06.770+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake_banking.load_snowflake scheduled__2026-02-11T12:32:00+00:00 [queued]>
+[2026-02-11T12:33:06.775+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake_banking.load_snowflake scheduled__2026-02-11T12:32:00+00:00 [queued]>
+[2026-02-11T12:33:06.776+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-02-11T12:33:06.785+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_snowflake> on 2026-02-11 12:32:00+00:00
+[2026-02-11T12:33:06.792+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake_banking', 'load_snowflake', 'scheduled__2026-02-11T12:32:00+00:00', '--job-id', '788', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake_dag.py', '--cfg-path', '/tmp/tmpard2n8k0']
+[2026-02-11T12:33:06.794+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=21607) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-11T12:33:06.794+0000] {standard_task_runner.py:91} INFO - Job 788: Subtask load_snowflake
+[2026-02-11T12:33:06.795+0000] {standard_task_runner.py:64} INFO - Started process 21627 to run task
+[2026-02-11T12:33:06.857+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake_banking.load_snowflake scheduled__2026-02-11T12:32:00+00:00 [running]> on host f01c0000b3b8
+[2026-02-11T12:33:06.923+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake_banking' AIRFLOW_CTX_TASK_ID='load_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2026-02-11T12:32:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-11T12:32:00+00:00'
+[2026-02-11T12:33:06.924+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-11T12:33:06.940+0000] {connection.py:611} INFO - Snowflake Connector for Python Version: 4.2.0, Python Version: 3.12.4, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2026-02-11T12:33:06.941+0000] {connection.py:1695} INFO - Connecting to GLOBAL Snowflake domain
+[2026-02-11T12:33:09.697+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_220447520592.parquet -> @customers stage
+[2026-02-11T12:33:09.923+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_132807915760.parquet -> @customers stage
+[2026-02-11T12:33:10.567+0000] {logging_mixin.py:188} INFO - Data loaded into customers
+[2026-02-11T12:33:10.798+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/accounts_220446866826.parquet -> @accounts stage
+[2026-02-11T12:33:11.025+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/accounts_220446963368.parquet -> @accounts stage
+[2026-02-11T12:33:11.205+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/accounts_132808404826.parquet -> @accounts stage
+[2026-02-11T12:33:11.506+0000] {logging_mixin.py:188} INFO - Data loaded into accounts
+[2026-02-11T12:33:11.716+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447071363.parquet -> @transactions stage
+[2026-02-11T12:33:11.946+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447165310.parquet -> @transactions stage
+[2026-02-11T12:33:12.136+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447275269.parquet -> @transactions stage
+[2026-02-11T12:33:12.316+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447346197.parquet -> @transactions stage
+[2026-02-11T12:33:12.516+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447417021.parquet -> @transactions stage
+[2026-02-11T12:33:12.761+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447680947.parquet -> @transactions stage
+[2026-02-11T12:33:12.945+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447810673.parquet -> @transactions stage
+[2026-02-11T12:33:13.387+0000] {logging_mixin.py:188} INFO - Data loaded into transactions
+[2026-02-11T12:33:13.557+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-11T12:33:13.558+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-11T12:33:13.566+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=minio_to_snowflake_banking, task_id=load_snowflake, run_id=scheduled__2026-02-11T12:32:00+00:00, execution_date=20260211T123200, start_date=20260211T123306, end_date=20260211T123313
+[2026-02-11T12:33:13.591+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-11T12:33:13.602+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-11T12:33:13.605+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

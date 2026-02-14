@@ -1,0 +1,13 @@
+banking_dbt:
+  outputs:
+    dev:
+      account: lntlzee-sn18637
+      database: banking
+      password: Karamelle22886644@u
+      role: accountadmin
+      schema: analytics
+      threads: 4
+      type: snowflake
+      user: yassine123
+      warehouse: COMPUTE_WH
+  target: dev

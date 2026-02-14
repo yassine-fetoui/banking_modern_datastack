@@ -1,0 +1,149 @@
+[2026-02-11T14:13:10.795+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-11T14:13:10.814+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake_banking.load_snowflake scheduled__2026-02-11T14:11:00+00:00 [queued]>
+[2026-02-11T14:13:10.819+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake_banking.load_snowflake scheduled__2026-02-11T14:11:00+00:00 [queued]>
+[2026-02-11T14:13:10.820+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2026-02-11T14:13:10.829+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_snowflake> on 2026-02-11 14:11:00+00:00
+[2026-02-11T14:13:10.836+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake_banking', 'load_snowflake', 'scheduled__2026-02-11T14:11:00+00:00', '--job-id', '993', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake_dag.py', '--cfg-path', '/tmp/tmpmd20kr7p']
+[2026-02-11T14:13:10.838+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=31085) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-11T14:13:10.838+0000] {standard_task_runner.py:91} INFO - Job 993: Subtask load_snowflake
+[2026-02-11T14:13:10.839+0000] {standard_task_runner.py:64} INFO - Started process 31105 to run task
+[2026-02-11T14:13:10.903+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake_banking.load_snowflake scheduled__2026-02-11T14:11:00+00:00 [running]> on host f01c0000b3b8
+[2026-02-11T14:13:10.971+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake_banking' AIRFLOW_CTX_TASK_ID='load_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2026-02-11T14:11:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-11T14:11:00+00:00'
+[2026-02-11T14:13:10.972+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-11T14:13:10.988+0000] {connection.py:611} INFO - Snowflake Connector for Python Version: 4.2.0, Python Version: 3.12.4, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2026-02-11T14:13:10.990+0000] {connection.py:1695} INFO - Connecting to GLOBAL Snowflake domain
+[2026-02-11T14:13:11.270+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x71876e2cd2e0>: Failed to resolve 'lntlzee-sn18637.snowflakecomputing.com' ([Errno -2] Name or service not known)")': /session/v1/login-request?request_id=da9bebd0-7143-4253-8ce6-4ca10b3b3272&databaseName=banking&schemaName=raw&warehouse=COMPUTE_WH&request_guid=63ec8d0e-c0cb-4f9a-a507-e57b13516a69
+[2026-02-11T14:13:12.325+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x71873bbaa0c0>: Failed to resolve 'lntlzee-sn18637.snowflakecomputing.com' ([Errno -2] Name or service not known)")': /session/v1/login-request?request_id=8576ba6b-91ec-4cb5-a471-2c245a470302&databaseName=banking&schemaName=raw&warehouse=COMPUTE_WH&request_guid=d2072dc4-56c7-4414-86d0-47d493e28060
+[2026-02-11T14:13:12.368+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-11T14:13:12.370+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/socket.py", line 964, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/urllib3/connection.py", line 762, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+snowflake.connector.vendored.urllib3.exceptions.NameResolutionError: <snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x71873bbcb7d0>: Failed to resolve 'lntlzee-sn18637.snowflakecomputing.com' ([Errno -2] Name or service not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+snowflake.connector.vendored.urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='lntlzee-sn18637.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=da9bebd0-7143-4253-8ce6-4ca10b3b3272&databaseName=banking&schemaName=raw&warehouse=COMPUTE_WH&request_guid=63ec8d0e-c0cb-4f9a-a507-e57b13516a69 (Caused by NameResolutionError("<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x71873bbcb7d0>: Failed to resolve 'lntlzee-sn18637.snowflakecomputing.com' ([Errno -2] Name or service not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/network.py", line 1109, in _request_exec
+    raw_ret = session.request(
+              ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/vendored/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+snowflake.connector.vendored.requests.exceptions.ConnectionError: HTTPSConnectionPool(host='lntlzee-sn18637.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=da9bebd0-7143-4253-8ce6-4ca10b3b3272&databaseName=banking&schemaName=raw&warehouse=COMPUTE_WH&request_guid=63ec8d0e-c0cb-4f9a-a507-e57b13516a69 (Caused by NameResolutionError("<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x71873bbcb7d0>: Failed to resolve 'lntlzee-sn18637.snowflakecomputing.com' ([Errno -2] Name or service not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 1970, in _authenticate
+    auth.authenticate(
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/auth/_auth.py", line 271, in authenticate
+    ret = self._rest._post_request(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/network.py", line 754, in _post_request
+    ret = self.fetch(
+          ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/network.py", line 873, in fetch
+    ret = self._request_exec_wrapper(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/network.py", line 1014, in _request_exec_wrapper
+    raise e
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/network.py", line 924, in _request_exec_wrapper
+    return_object = self._request_exec(
+                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/network.py", line 1209, in _request_exec
+    raise OperationalError(
+snowflake.connector.errors.OperationalError: 251011: 251011: ConnectionTimeout occurred during login. Will be handled by authenticator
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 58, in load_to_snowflake
+    conn = snowflake.connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/__init__.py", line 64, in Connect
+    return SnowflakeConnection(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 679, in __init__
+    self.connect(**kwargs)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 1174, in connect
+    self.__open_connection()
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 1602, in __open_connection
+    self.authenticate_with_retry(self.auth_class)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 1938, in authenticate_with_retry
+    self._authenticate(auth_instance)
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 2016, in _authenticate
+    raise auth_op from e
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/connection.py", line 1991, in _authenticate
+    auth_instance.handle_timeout(
+  File "/home/airflow/.local/lib/python3.12/site-packages/snowflake/connector/auth/by_plugin.py", line 212, in handle_timeout
+    raise error
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+[2026-02-11T14:13:12.392+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=minio_to_snowflake_banking, task_id=load_snowflake, run_id=scheduled__2026-02-11T14:11:00+00:00, execution_date=20260211T141100, start_date=20260211T141310, end_date=20260211T141312
+[2026-02-11T14:13:12.406+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 993 for task load_snowflake (250001: 250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting; 31105)
+[2026-02-11T14:13:12.460+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-02-11T14:13:12.477+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-11T14:13:12.514+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

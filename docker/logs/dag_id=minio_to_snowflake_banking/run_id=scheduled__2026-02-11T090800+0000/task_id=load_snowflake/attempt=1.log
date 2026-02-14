@@ -1,0 +1,37 @@
+[2026-02-11T09:09:10.415+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-11T09:09:10.450+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_to_snowflake_banking.load_snowflake scheduled__2026-02-11T09:08:00+00:00 [queued]>
+[2026-02-11T09:09:10.458+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_to_snowflake_banking.load_snowflake scheduled__2026-02-11T09:08:00+00:00 [queued]>
+[2026-02-11T09:09:10.465+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-02-11T09:09:10.482+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_snowflake> on 2026-02-11 09:08:00+00:00
+[2026-02-11T09:09:10.495+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_to_snowflake_banking', 'load_snowflake', 'scheduled__2026-02-11T09:08:00+00:00', '--job-id', '370', '--raw', '--subdir', 'DAGS_FOLDER/minio_to_snowflake_dag.py', '--cfg-path', '/tmp/tmp59wj3al1']
+[2026-02-11T09:09:10.501+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=2327) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-02-11T09:09:10.502+0000] {standard_task_runner.py:91} INFO - Job 370: Subtask load_snowflake
+[2026-02-11T09:09:10.505+0000] {standard_task_runner.py:64} INFO - Started process 2347 to run task
+[2026-02-11T09:09:10.635+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_to_snowflake_banking.load_snowflake scheduled__2026-02-11T09:08:00+00:00 [running]> on host f01c0000b3b8
+[2026-02-11T09:09:10.762+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_to_snowflake_banking' AIRFLOW_CTX_TASK_ID='load_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2026-02-11T09:08:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-11T09:08:00+00:00'
+[2026-02-11T09:09:10.765+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-11T09:09:10.796+0000] {connection.py:611} INFO - Snowflake Connector for Python Version: 4.2.0, Python Version: 3.12.4, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2026-02-11T09:09:10.801+0000] {connection.py:1695} INFO - Connecting to GLOBAL Snowflake domain
+[2026-02-11T09:09:13.833+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_220447520592.parquet -> @customers stage
+[2026-02-11T09:09:14.231+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/customers_132807915760.parquet -> @customers stage
+[2026-02-11T09:09:14.638+0000] {logging_mixin.py:188} INFO - Data loaded into customers
+[2026-02-11T09:09:16.319+0000] {connectionpool.py:868} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /wuqd1000-s/tables/2998218761/accounts_220446866826.parquet
+[2026-02-11T09:09:25.371+0000] {storage_client.py:338} WARNING - HEAD with url b'https://sfc-ch-ds1-04-customer-stage.s3.eu-central-2.amazonaws.com/wuqd1000-s/tables/2998218761/accounts_220446866826.parquet' failed for transient error: HTTPSConnectionPool(host='sfc-ch-ds1-04-customer-stage.s3.eu-central-2.amazonaws.com', port=443): Max retries exceeded with url: /wuqd1000-s/tables/2998218761/accounts_220446866826.parquet (Caused by NameResolutionError("<snowflake.connector.vendored.urllib3.connection.HTTPSConnection object at 0x76773a8982c0>: Failed to resolve 'sfc-ch-ds1-04-customer-stage.s3.eu-central-2.amazonaws.com' ([Errno -5] No address associated with hostname)"))
+[2026-02-11T09:09:25.992+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/accounts_220446866826.parquet -> @accounts stage
+[2026-02-11T09:09:28.350+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/accounts_220446963368.parquet -> @accounts stage
+[2026-02-11T09:09:28.659+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/accounts_132808404826.parquet -> @accounts stage
+[2026-02-11T09:09:29.070+0000] {logging_mixin.py:188} INFO - Data loaded into accounts
+[2026-02-11T09:09:29.329+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447071363.parquet -> @transactions stage
+[2026-02-11T09:09:29.587+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447165310.parquet -> @transactions stage
+[2026-02-11T09:09:29.844+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447275269.parquet -> @transactions stage
+[2026-02-11T09:09:30.098+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447346197.parquet -> @transactions stage
+[2026-02-11T09:09:30.365+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447417021.parquet -> @transactions stage
+[2026-02-11T09:09:30.637+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447680947.parquet -> @transactions stage
+[2026-02-11T09:09:30.833+0000] {logging_mixin.py:188} INFO - Uploaded /tmp/minio_downloads/transactions_220447810673.parquet -> @transactions stage
+[2026-02-11T09:09:31.213+0000] {logging_mixin.py:188} INFO - Data loaded into transactions
+[2026-02-11T09:09:31.474+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-02-11T09:09:31.477+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-11T09:09:31.503+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=minio_to_snowflake_banking, task_id=load_snowflake, run_id=scheduled__2026-02-11T09:08:00+00:00, execution_date=20260211T090800, start_date=20260211T090910, end_date=20260211T090931
+[2026-02-11T09:09:31.599+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-02-11T09:09:31.648+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-02-11T09:09:31.667+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
