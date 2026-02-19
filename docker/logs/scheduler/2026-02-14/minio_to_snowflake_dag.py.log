@@ -2056,3 +2056,647 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'airflow.providers.standard'
 [2026-02-14T22:58:21.206+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
 [2026-02-14T22:58:21.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.477 seconds
+[2026-02-14T22:58:51.352+0000] {processor.py:161} INFO - Started process (PID=983) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T22:58:51.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T22:58:51.356+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:58:51.356+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T22:58:51.900+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:58:51.891+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T22:58:51.906+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T22:58:51.969+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.623 seconds
+[2026-02-14T22:59:22.627+0000] {processor.py:161} INFO - Started process (PID=989) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T22:59:22.629+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T22:59:22.631+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:59:22.631+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T22:59:23.407+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:59:23.401+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T22:59:23.409+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T22:59:23.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.800 seconds
+[2026-02-14T22:59:53.963+0000] {processor.py:161} INFO - Started process (PID=995) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T22:59:53.966+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T22:59:53.968+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:59:53.968+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T22:59:54.507+0000] {logging_mixin.py:188} INFO - [2026-02-14T22:59:54.496+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T22:59:54.509+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T22:59:54.525+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.569 seconds
+[2026-02-14T23:00:24.665+0000] {processor.py:161} INFO - Started process (PID=1001) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:00:24.667+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:00:24.669+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:00:24.669+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:00:25.257+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:00:25.250+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:00:25.259+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:00:25.273+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.617 seconds
+[2026-02-14T23:00:55.839+0000] {processor.py:161} INFO - Started process (PID=1007) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:00:55.841+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:00:55.842+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:00:55.842+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:00:56.327+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:00:56.321+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:00:56.328+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:00:56.343+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.508 seconds
+[2026-02-14T23:01:26.843+0000] {processor.py:161} INFO - Started process (PID=1013) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:01:26.844+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:01:26.845+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:01:26.845+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:01:27.378+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:01:27.340+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:01:27.392+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:01:27.418+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.581 seconds
+[2026-02-14T23:01:58.005+0000] {processor.py:161} INFO - Started process (PID=1019) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:01:58.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:01:58.010+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:01:58.010+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:01:58.529+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:01:58.523+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:01:58.531+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:01:58.547+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.547 seconds
+[2026-02-14T23:02:28.760+0000] {processor.py:161} INFO - Started process (PID=1025) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:02:28.761+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:02:28.763+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:02:28.763+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:02:29.307+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:02:29.297+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:02:29.309+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:02:29.323+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.569 seconds
+[2026-02-14T23:03:00.236+0000] {processor.py:161} INFO - Started process (PID=1031) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:03:00.238+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:03:00.242+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:03:00.241+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:03:00.828+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:03:00.817+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:03:00.830+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:03:00.847+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.616 seconds
+[2026-02-14T23:03:31.558+0000] {processor.py:161} INFO - Started process (PID=1037) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:03:31.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:03:31.568+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:03:31.568+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:03:32.253+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:03:32.247+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:03:32.256+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:03:32.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.721 seconds
+[2026-02-14T23:04:02.780+0000] {processor.py:161} INFO - Started process (PID=1043) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:04:02.781+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:04:02.783+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:04:02.783+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:04:03.570+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:04:03.530+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:04:03.579+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:04:03.607+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.835 seconds
+[2026-02-14T23:04:34.282+0000] {processor.py:161} INFO - Started process (PID=1049) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:04:34.284+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:04:34.286+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:04:34.286+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:04:34.855+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:04:34.847+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:04:34.858+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:04:34.875+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.598 seconds
+[2026-02-14T23:05:05.336+0000] {processor.py:161} INFO - Started process (PID=1055) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:05:05.338+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:05:05.340+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:05:05.339+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:05:05.844+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:05:05.838+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:05:05.846+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:05:05.866+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.538 seconds
+[2026-02-14T23:05:35.933+0000] {processor.py:161} INFO - Started process (PID=1061) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:05:35.935+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:05:35.937+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:05:35.936+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:05:36.759+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:05:36.683+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:05:36.762+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:05:36.787+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.863 seconds
+[2026-02-14T23:06:07.183+0000] {processor.py:161} INFO - Started process (PID=1067) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:06:07.185+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:06:07.186+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:06:07.186+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:06:07.686+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:06:07.679+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:06:07.689+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:06:07.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.525 seconds
+[2026-02-14T23:06:38.528+0000] {processor.py:161} INFO - Started process (PID=1073) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:06:38.529+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:06:38.531+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:06:38.530+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:06:39.046+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:06:39.003+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:06:39.049+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:06:39.065+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.542 seconds
+[2026-02-14T23:07:09.156+0000] {processor.py:161} INFO - Started process (PID=1079) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:07:09.157+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:07:09.159+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:07:09.158+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:07:09.645+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:07:09.639+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:07:09.646+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:07:09.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.511 seconds
+[2026-02-14T23:07:40.476+0000] {processor.py:161} INFO - Started process (PID=1085) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:07:40.478+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:07:40.480+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:07:40.479+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:07:40.999+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:07:40.991+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:07:41.001+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:07:41.016+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.546 seconds
+[2026-02-14T23:08:11.070+0000] {processor.py:161} INFO - Started process (PID=1091) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:08:11.071+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:08:11.073+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:08:11.073+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:08:11.633+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:08:11.624+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:08:11.635+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:08:11.656+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.591 seconds
+[2026-02-14T23:08:42.482+0000] {processor.py:161} INFO - Started process (PID=1097) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:08:42.485+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:08:42.490+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:08:42.489+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:08:43.022+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:08:43.017+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:08:43.023+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:08:43.066+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.591 seconds
+[2026-02-14T23:09:14.003+0000] {processor.py:161} INFO - Started process (PID=1103) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:09:14.004+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:09:14.006+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:09:14.006+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:09:14.572+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:09:14.564+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:09:14.574+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:09:14.590+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.596 seconds
+[2026-02-14T23:09:45.444+0000] {processor.py:161} INFO - Started process (PID=1109) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:09:45.445+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:09:45.447+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:09:45.447+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:09:45.901+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:09:45.894+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:09:45.903+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:09:45.917+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.480 seconds
+[2026-02-14T23:10:16.971+0000] {processor.py:161} INFO - Started process (PID=1115) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:10:16.973+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:10:16.975+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:10:16.975+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:10:17.567+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:10:17.546+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:10:17.573+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:10:17.599+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.635 seconds
+[2026-02-14T23:10:48.097+0000] {processor.py:161} INFO - Started process (PID=1121) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:10:48.098+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:10:48.100+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:10:48.100+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:10:48.539+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:10:48.535+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:10:48.539+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:10:48.554+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.462 seconds
+[2026-02-14T23:11:18.703+0000] {processor.py:161} INFO - Started process (PID=1127) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:11:18.705+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:11:18.707+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:11:18.707+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:11:19.231+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:11:19.224+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:11:19.233+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:11:19.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.562 seconds
+[2026-02-14T23:11:50.237+0000] {processor.py:161} INFO - Started process (PID=1133) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:11:50.238+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:11:50.239+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:11:50.239+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:11:50.685+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:11:50.681+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:11:50.687+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:11:50.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.471 seconds
+[2026-02-14T23:12:21.656+0000] {processor.py:161} INFO - Started process (PID=1139) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:12:21.657+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:12:21.659+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:12:21.659+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:12:22.112+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:12:22.106+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:12:22.113+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:12:22.127+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.475 seconds
+[2026-02-14T23:12:52.220+0000] {processor.py:161} INFO - Started process (PID=1145) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:12:52.221+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:12:52.223+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:12:52.222+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:12:52.648+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:12:52.643+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:12:52.649+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:12:52.662+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.447 seconds
+[2026-02-14T23:13:23.614+0000] {processor.py:161} INFO - Started process (PID=1152) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:13:23.616+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:13:23.617+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:13:23.617+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:13:24.167+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:13:24.164+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:13:24.168+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:13:24.186+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.576 seconds
+[2026-02-14T23:13:54.505+0000] {processor.py:161} INFO - Started process (PID=1158) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:13:54.506+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:13:54.508+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:13:54.508+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:13:55.005+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:13:54.990+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:13:55.007+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:13:55.020+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.525 seconds
+[2026-02-14T23:14:25.877+0000] {processor.py:161} INFO - Started process (PID=1164) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:14:25.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:14:25.880+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:14:25.880+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:14:26.351+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:14:26.344+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:14:26.353+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:14:26.370+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.500 seconds
+[2026-02-14T23:14:56.568+0000] {processor.py:161} INFO - Started process (PID=1170) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:14:56.570+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:14:56.573+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:14:56.573+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:14:57.203+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:14:57.196+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:14:57.206+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:14:57.232+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.677 seconds
+[2026-02-14T23:15:27.671+0000] {processor.py:161} INFO - Started process (PID=1176) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:15:27.672+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:15:27.673+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:15:27.673+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:15:28.129+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:15:28.122+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:15:28.131+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:15:28.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.479 seconds
+[2026-02-14T23:15:58.325+0000] {processor.py:161} INFO - Started process (PID=1182) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:15:58.326+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:15:58.327+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:15:58.327+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:15:58.750+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:15:58.745+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:15:58.750+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:15:58.764+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.443 seconds
+[2026-02-14T23:16:28.878+0000] {processor.py:161} INFO - Started process (PID=1188) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:16:28.879+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:16:28.880+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:16:28.880+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:16:29.321+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:16:29.316+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:16:29.322+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:16:29.341+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.468 seconds
+[2026-02-14T23:16:59.488+0000] {processor.py:161} INFO - Started process (PID=1194) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:16:59.490+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:16:59.492+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:16:59.491+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:16:59.985+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:16:59.982+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:16:59.986+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:17:00.000+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.516 seconds
+[2026-02-14T23:17:30.509+0000] {processor.py:161} INFO - Started process (PID=1200) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:17:30.510+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:17:30.511+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:17:30.511+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:17:30.942+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:17:30.938+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:17:30.943+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:17:30.961+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.456 seconds
+[2026-02-14T23:18:01.033+0000] {processor.py:161} INFO - Started process (PID=1206) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:18:01.034+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:18:01.035+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:18:01.035+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:18:01.494+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:18:01.490+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:18:01.495+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:18:01.508+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.479 seconds
+[2026-02-14T23:18:31.821+0000] {processor.py:161} INFO - Started process (PID=1212) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:18:31.823+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:18:31.825+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:18:31.825+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:18:32.406+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:18:32.395+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:18:32.420+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:18:32.453+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.640 seconds
+[2026-02-14T23:19:03.124+0000] {processor.py:161} INFO - Started process (PID=1218) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:19:03.125+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:19:03.126+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:19:03.126+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:19:03.560+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:19:03.554+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:19:03.561+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:19:03.579+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.459 seconds
+[2026-02-14T23:19:33.643+0000] {processor.py:161} INFO - Started process (PID=1224) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:19:33.644+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:19:33.646+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:19:33.646+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:19:34.369+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:19:34.342+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:19:34.377+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:19:34.409+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.770 seconds
+[2026-02-14T23:20:04.876+0000] {processor.py:161} INFO - Started process (PID=1230) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:20:04.877+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:20:04.878+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:20:04.878+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:20:05.357+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:20:05.353+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:20:05.359+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:20:05.380+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.509 seconds
+[2026-02-14T23:20:36.378+0000] {processor.py:161} INFO - Started process (PID=1236) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:20:36.380+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:20:36.382+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:20:36.381+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:20:36.857+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:20:36.853+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:20:36.858+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:20:36.877+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.507 seconds
+[2026-02-14T23:21:06.994+0000] {processor.py:161} INFO - Started process (PID=1242) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:21:06.995+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:21:06.999+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:21:06.998+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:21:07.464+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:21:07.459+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:21:07.466+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:21:07.480+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.493 seconds
+[2026-02-14T23:21:38.344+0000] {processor.py:161} INFO - Started process (PID=1248) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:21:38.345+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:21:38.346+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:21:38.346+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:21:38.780+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:21:38.777+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:21:38.781+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:21:38.799+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.460 seconds
+[2026-02-14T23:22:08.865+0000] {processor.py:161} INFO - Started process (PID=1254) to work on /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:22:08.866+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/minio_to_snowflake_dag.py for tasks to queue
+[2026-02-14T23:22:08.867+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:22:08.867+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:22:09.318+0000] {logging_mixin.py:188} INFO - [2026-02-14T23:22:09.315+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/minio_to_snowflake_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/minio_to_snowflake_dag.py", line 5, in <module>
+    from airflow.providers.standard.operators.python import PythonOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2026-02-14T23:22:09.320+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/minio_to_snowflake_dag.py
+[2026-02-14T23:22:09.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/minio_to_snowflake_dag.py took 0.477 seconds
